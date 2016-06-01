@@ -33,16 +33,16 @@ puts 6 == 1000 / (300 / 2)
 msg = "hEllO"
 
 print "11. "
-puts msg == "HELLO"
+puts msg.upcase == "HELLO"
 
 print "12. "
-puts msg == "HeLLo"
+puts msg.swapcase == "HeLLo"
 
 print "13. "
-puts msg == "OllEh"
+puts msg.reverse == "OllEh"
 
 print "13a. "
-puts msg == "OLLEH"
+puts msg.reverse.upcase == "OLLEH"
 
 arr = ['a', 'b', 'c']
 
