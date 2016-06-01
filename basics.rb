@@ -47,13 +47,13 @@ puts msg.reverse.upcase == "OLLEH"
 arr = ['a', 'b', 'c']
 
 print "14. "
-puts arr == 'c'
+puts arr.last == 'c'
 
 print "15. "
-puts 5 == arr.count
+puts 3 == arr.count
 
 print "16. "
-puts arr == 'a,b,c'
+puts arr.join(",") == 'a,b,c'
 
 #Hint: This will take 2 method calls
 print "17. "
