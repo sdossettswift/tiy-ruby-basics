@@ -57,18 +57,19 @@ puts arr.join(",") == 'a,b,c'
 
 #Hint: This will take 2 method calls
 print "17. "
-puts arr == 'C'
+puts arr.last.upcase == 'C'
 
 hsh = { name: 'Fido', age: '99' }
 print "18. "
-puts  hsh == 'Fido'
+puts  hsh[:name] == 'Fido'
 
 print "19. "
-puts hsh == [:name, :age]
+puts hsh.keys == [:name, :age]
 
 print "20. "
-puts hsh == ['Fido', '99']
+puts hsh.values == ['Fido', '99']
 
 
 print "21. "
+hsh[:special] = 'Dog'
 puts hsh == { name: 'Fido', age: '99', special: 'Dog' }
