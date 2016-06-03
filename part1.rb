@@ -7,10 +7,17 @@ string= "Tacos must not have lettuce Only meat and cheese and salsa"
 
 words = string.split (" ")
 
-counter = 0;
-words.each do |word|
-  if word.length == 5
-    counter += 1
-  end
+# counter = 0;
+# words.each do |word|
+#   if word.length == 5
+#     counter += 1
+#   end
+# end
+# puts counter
+
+words_with_5 = words.select do |word|
+  word.length == 5
 end
-puts counter
+puts words_with_5.inspect
+
+puts "has #{words_with_5} words with 5"
